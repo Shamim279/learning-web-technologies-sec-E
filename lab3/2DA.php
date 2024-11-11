@@ -1,5 +1,26 @@
+
+
+
+
+
+
 <?php
-$i=10;
+
+
+print("<html>
+    <head>
+        <title>
+
+        </title>
+    </head>
+    <body>
+        <table border ='1'>
+            <tr>
+                <td>");
+
+
+
+
 
 
 $A=[
@@ -21,8 +42,56 @@ for($i=0;$i<3;$i++)  //row
    
     print("<br>");
 
+
 }
 
+print("</td>");
+
+
+print("<td>");
+
+$n=3;
+for($row=$n;$row>=1;$row--)
+{
+    for($col=1;$col<=$row;$col++)
+       {
+
+        print($col);
+      
+
+       }
+  
+    print("<br>");
+
+}
+print("</td>");
+
+print("<td>");
+
+
+$count='A';
+
+for($row='A';$row<='F';$row++)
+{
+    for($col='A';$col<=$row;$col++)
+       {
+
+        print($count);
+        $count++;
+        if($count=='G')
+        {
+            return 0;
+        }
+
+       }
+
+  
+    print("<br>");
+   
+
+}
+
+print("</td>")
   
 
 
