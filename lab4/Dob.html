@@ -1,18 +1,24 @@
 <html>
-    <head>
-        <title>Dob</title>
-    </head>
-    <body>
-      
-        <form method="get" action="DateOfBirth.php" enctype=""> <br>
-        <fieldset>
-           <legend><b>Date of Birth</b></legend> 
-           <input type="date" name="dob" value=""/><br/>
-           <hr>
-           <input type="submit" name="submit" value="submit" />
-        </fieldset>
-    </body>
+<head>
+    <title>HTML Form</title>
+</head>
+<body>
+        <h1>HTML Form</h1>
 
-
-</form>
+        <form method="post" action="DOBcheck.php">
+            <fieldset>
+                <table>
+                    <tr>
+                        <td>Date Of Birth</td>
+                    </tr>
+                    <tr>
+                            <td><input type="date" name="date" value="" /></td>
+                    </tr>
+                    <tr>
+                        <td><input type="submit" name="submit" value="Submit" /></td>
+                    </tr>
+                </table>
+            </fieldset>
+        </form>
+</body>
 </html>
