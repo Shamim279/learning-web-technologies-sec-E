@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <form method="post" action="../controller/registrationCheck.php" onsubmit="  return validateregform()">
+            <fieldset>
+                <legend>Registration</legend>
+                <table>
+                    <tr>
+                        <td>Employee Name:</td>
+                        <td><input type="text" id="ename" name="ename"> <span id="enameError"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Contract:</td>
+                        <td><input type="text" id="contract" name="contract"  > <span id="contractError"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Username:</td>
+                        <td><input type="text" id="username" name="username"  > <span id="usernameError"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Password:</td>
+                        <td><input type="password" id="password" name="password"> <span id="passwordError"></span></td>
+                    </tr>
+                    
+                        <td colspan="2" style="text-align: center;">
+                            <input type="submit" name="signup" value="Sign Up">
+                            <a href="login.html">Sign In</a>
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+        </form>
+        <script src="../javascript/validation.js"></script>
+    </body>
+</html>
